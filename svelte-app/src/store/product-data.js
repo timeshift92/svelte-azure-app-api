@@ -4,7 +4,7 @@ import API from './config';
 
 export async function getProductsAction() {
   try {
-    const response = await fetch(`${API}/products-get`, {
+    const response = await fetch(`${API}/products`, {
       method: 'GET',
     });
     const products = await parseList(response);
